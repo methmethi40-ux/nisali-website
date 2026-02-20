@@ -1,0 +1,107 @@
+/* Reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-page height */
+html, body {
+    height: 100%;
+}
+
+/* Darker animated gradient background */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(-45deg, hsl(250, 60%, 25%), hsl(280, 50%, 30%), hsl(220, 60%, 35%), hsl(260, 50%, 28%));
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    text-align: center;
+    color: white; /* make text visible on dark bg */
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header */
+.main {
+    color: #f0c0ff;
+    margin-top: 20px;
+}
+
+.main-des {
+    color: #e0d0ff;
+    margin-bottom: 20px;
+}
+
+/* Navigation Buttons */
+.navbutton {
+    background-color: hsl(330, 81%, 60%);
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.navbutton:hover {
+    background-color: #db2777;
+    transform: scale(1.05);
+}
+
+/* Card container */
+.card-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual image card */
+.img1 {
+    max-width: 150px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.4);
+    padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.img1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Caption under image */
+.img1 p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #f0f0f0;
+}
+
+/* Footer */
+.footer {
+    opacity: 70%;
+    color: #ccc;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: rgba(0,0,0,0.3);
+}
