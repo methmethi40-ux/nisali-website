@@ -1,107 +1,218 @@
-/* Reset and box-sizing */
-* {
-    margin: 0;
-    padding: 0;
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.edu-nsw-act-cursive-<uniquifier> {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.reenie-beanie-regular {
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.josefin-sans-<uniquifier> {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+.dancing-script-<uniquifier> {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.bpmf-zihi-kai-std-regular {
+  font-family: "Bpmf Zihi Kai Std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zeyada-regular {
+  font-family: "Zeyada", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
     box-sizing: border-box;
 }
 
-/* Full-page height */
-html, body {
-    height: 100%;
-}
-
-/* Darker animated gradient background */
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(-45deg, hsl(250, 60%, 25%), hsl(280, 50%, 30%), hsl(220, 60%, 35%), hsl(260, 50%, 28%));
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
+body{
     text-align: center;
-    color: white; /* make text visible on dark bg */
+    margin: 0px;
+    padding: 0px;
+    font-family: "Josefin Sans";
 }
 
-/* Gradient Animation */
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+.header{
+    font-family: "Josefin Sans";
+    background-color: aqua;
+    margin: none;
+    padding:none;
+    padding-top: 5px;
 }
 
-/* Header */
-.main {
-    color: #f0c0ff;
-    margin-top: 20px;
+.header p{
+    color:hsl(0, 0%, 18%);
+    font-family: "Reenie Beanie";
+    font-size: 25px;
 }
 
-.main-des {
-    color: #e0d0ff;
+.header h1{
+    font-size: 29px;
+}
+
+.navbar li{
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.navbar a:visited{
+    color:black;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.header p{
+    font-family: "Josefin Sans";
+}
+
+.navbar {
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: aqua;
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    height: 70px;
+    text-align: left;
+}
+
+.boxy{
+    width: 400px;
+    height: 400px;
+    background-color:hsl(0, 0%, 100%);
+    box-shadow: 0px 0px 10px hsl(0, 3%, 89%);
+    border-radius: 10px;
+    margin: 100px auto;
+}
+
+.boxy button{
+    border: none;
+    margin-top: 15px;
+    margin-right: 300px;
+    padding:5px;
+    background-color: hsl(180, 19%, 94%);
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Josefin Sans";
+}
+
+.boxy button:hover{
+    background-color: hsl(180, 9%, 84%);
+}
+
+.cont img{
+    width: 200px;
+    padding: 10px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.about-header { 
+    text-align: center;
+     padding: 40px;
+      font-family: "Josefin Sans";
+}
+.about-section { 
+    background-color: hsl(0, 33%, 88%);
+     padding: 25px;
+      margin: 30px auto;
+       max-width: 700px;
+       border-radius: 15px;
+        box-shadow: 0 4px 10px hsla(0, 0%, 0%, 0.1);
+         font-family: "Josefin Sans";
+}
+.cont{
+    text-align: center;
+     margin: 40px auto;
+      max-width: 400px;
+       padding: 20px;
+        border-radius: 10px;
+         box-shadow: 0 4px 10px hsla(0, 0%, 0%, 0.1); 
+    border-radius: 10px;
+    width: 300px;
+    height: 350px;
+    align-items: center;
+    margin-left: 10px;
+    border: 3px;
+    box-shadow: 0px 0px 10px hsl(0, 6%, 94%);
+}
+
+.schooltr .cont{
     margin-bottom: 20px;
 }
 
-/* Navigation Buttons */
-.navbutton {
-    background-color: hsl(330, 81%, 60%);
-    color: white;
-    font-weight: bold;
-    padding: 10px 20px;
-    margin: 20px 10px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s ease;
+.cont p{
+    margin-top: 10px;
+    max-width: 200px;
+    margin:40px auto;
+    padding-bottom: 15px;
 }
 
-.navbutton:hover {
-    background-color: #db2777;
-    transform: scale(1.05);
-}
-
-/* Card container */
-.card-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap;
-}
-
-/* Individual image card */
-.img1 {
-    max-width: 150px;
-    border: 2px solid white;
-    border-radius: 5px;
-    background-color: rgba(0,0,0,0.4);
+.boxy img{
+    width: 200px;
+    height: 200px;
     padding: 5px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    float: right;
+    margin-left: 5px;
+    border-radius: 20px;
+    border-left: 5px double orange;
+    border-bottom: 5px double orange;
 }
 
-.img1:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+.boxy h2{
+    padding-top: 20px;
+    margin-bottom: 100px;
+    font-family: "Pacifico";
 }
 
-.img1 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 5px;
-}
-
-/* Caption under image */
-.img1 p {
-    text-align: center;
-    margin-top: 5px;
-    font-size: 14px;
-    font-weight: lighter;
-    color: #f0f0f0;
-}
-
-/* Footer */
-.footer {
-    opacity: 70%;
-    color: #ccc;
-    margin-top: 40px;
-    padding: 20px 0;
-    background-color: rgba(0,0,0,0.3);
+.boxy p{
+    max-width: 200px;
 }
